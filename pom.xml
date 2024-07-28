@@ -4,6 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <mainClass>cyberdyne.generator.Main</mainClass>
+                    <arguments>
+                        <argument>argument1</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <groupId>live.boomcam</groupId>
     <artifactId>BoomcamService</artifactId>
     <version>1.0-SNAPSHOT</version>
