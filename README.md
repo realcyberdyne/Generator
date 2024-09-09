@@ -1,4 +1,4 @@
-# How Use Generator
+# How use Generator
 
 ### 1-Install JDK 17
 ```
