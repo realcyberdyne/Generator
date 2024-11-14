@@ -7,16 +7,14 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.2</version>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.2.0</version>
                 <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>cyberdyne.generator.Main</mainClass>
-                        </manifest>
-                    </archive>
+                    <mainClass>cyberdyne.generator.Main</mainClass>
+                    <arguments>
+                        <argument>argument1</argument>
+                    </arguments>
                 </configuration>
             </plugin>
         </plugins>
