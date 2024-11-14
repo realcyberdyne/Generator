@@ -166,6 +166,7 @@ public class HttpServer
                                 + HttpView.View("404");
 
                         output.write(HttpResponse.getBytes());
+                        System.out.println("Error in request "+e.getMessage());
                     }
                 }
                 else
